@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: white;
+}
+
+.hero {
+    min-height: 100vh;
+    background: rgb(38, 38, 85);
+    color: white;
+    padding: 40px 80px;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: repeating-linear-gradient(
+        135deg,
+        #2f3e46,
+        #2f3e46 10px,
+        #344e56 10px,
+        #344e56 20px
+    ); */
+    background: snow;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 0;
+}
+
+.nav-container {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #1b2a30;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo (Left) */
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #5ec2d6;
+}
+
+/* Center Nav */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #dce3e7;
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Hover underline effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #5ec2d6;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Sign Up Button (Right) */
+.signup-btn {
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 2px solid #5ec2d6;
+    color: #5ec2d6;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.signup-btn:hover {
+    background-color: #5ec2d6;
+    color: #1b2a30;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* LEFT SIDE */
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.left p {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.primary-btn {
+    padding: 15px 30px;
+    border: none;
+    background: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.secondary-btn {
+    padding: 15px 30px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* RIGHT SIDE */
+
+.right {
+    position: relative;
+    width: 40%;
+    height: 400px;
+}
+
+.card {
+    position: absolute;
+    width: 220px;
+    height: 260px;
+    border-radius: 20px;
+    padding: 20px;
+    background: #222;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #bbb;
+    font-size: 14px;
+}
+
+.card1 {
+    left: 0;
+    top: 40px;
+    transform: rotate(-10deg);
+}
+
+.card2 {
+    left: 130px;
+    top: 0;
+    transform: rotate(5deg);
+    z-index: 2;
+}
+
+.card3 {
+    left: 260px;
+    top: 60px;
+    transform: rotate(12deg);
+}
+
+.card:hover {
+    transform: scale(1.05) rotate(0deg);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 60px;
+        height: auto;
+        position: static;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        position: static;
+        transform: none;
+    }
+}
+
+/* omor */
+
+
+
+/* WRAPPER */
+.booking-wrapper {
+    width: 90%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* TOP TABS */
+.top-tabs {
+    display: flex;
+    background: #eee;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.tab {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.tab.active {
+    background: white;
+    color: #8c1d4a;
+    font-weight: 600;
+}
+
+/* BOOKING CARD */
+.booking-card {
+    background: white;
+    padding: 40px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* TRIP TYPE */
+.trip-type {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.trip-type input {
+    margin-right: 8px;
+}
+
+/* FORM ROW */
+.form-row {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    flex: 1;
+}
+
+.input-box label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-box input,
+.input-box select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.swap-icon {
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: #8c1d4a;
+}
+
+/* BOTTOM ROW */
+.bottom-row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.avios-check {
+    font-size: 14px;
+}
+
+.promo-search {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.promo-search input {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    min-width: 250px;
+}
+
+.promo-search button {
+    padding: 14px 40px;
+    border-radius: 30px;
+    border: none;
+    background: rgb(38, 38, 85);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.promo-search button:hover {
+    background: #5e001f;
+}
+
+/* Image trick*/
+.trick-image {
+    background-image: none;
+    max-width: 20px;
+    max-height: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .promo-search {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .promo-search input {
+        width: 100%;
+    }
+
+    .promo-search button {
+        width: 100%;
+    }
+}

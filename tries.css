@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+}
+
+.nx-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.nx-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.nx-logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nx-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nx-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nx-nav a:hover {
+    color: #0057ff;
+}
+
+/* Language */
+
+.nx-language {
+    position: relative;
+    cursor: pointer;
+}
+
+.nx-selected {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.nx-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    display: none;
+}
+
+.nx-option {
+    padding: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nx-option:hover {
+    background: #0057ff;
+    color: white;
+}

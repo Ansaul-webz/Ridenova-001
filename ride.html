@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ride Nova - Book Ride</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<link rel="stylesheet" href="/t/cssdem/ride.css">
+</head>
+<body>
+
+<header class="rn-header">
+    <h2>Ride Nova</h2>
+</header>
+
+<section class="rn-container">
+
+    <!-- BOOKING SECTION -->
+    <div class="rn-booking">
+
+        <h1>Book a Ride</h1>
+
+        <div class="rn-card">
+            <label>Phone Number</label>
+            <input type="tel" id="phoneInput" class="rn-input" placeholder="Enter phone number">
+
+            <label>Pickup Location</label>
+            <input type="text" id="pickupInput" class="rn-input" readonly placeholder="Click map to select">
+
+            <label>Destination</label>
+            <input type="text" id="destinationInput" class="rn-input" readonly placeholder="Click map to select">
+
+            <button class="rn-btn" onclick="submitRide()">Request Ride</button>
+
+            <div class="rn-info" id="rideInfo">
+                Distance: -- <br>
+                Estimated Time: --
+            </div>
+        </div>
+
+        <!-- HISTORY -->
+        <div class="rn-card">
+            <h3>Ride History</h3>
+            <ul id="rideHistory" class="rn-history"></ul>
+        </div>
+
+    </div>
+
+    <!-- MAP -->
+    <div id="map"></div>
+
+</section>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="/javascript/ride.js"></script>
+
+</body>
+</html>

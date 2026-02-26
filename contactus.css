@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+body{
+    background:#ffffff;
+    color:#0f172a;
+}
+
+/* HERO SECTION */
+.rn-contact-hero{
+    position:relative;
+    height:80vh;
+    background:url('https://i.pinimg.com/1200x/2f/54/bb/2f54bbfc53cd40fcc71ad9b191c30ec0.jpg') no-repeat center center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.rn-overlay{
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:40px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.rn-overlay h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.rn-overlay p{
+    max-width:600px;
+    font-size:18px;
+}
+
+/* REASON SECTION */
+.rn-reason-section{
+    position:relative;
+    padding:120px 8% 80px 8%;
+    background:#f8fafc;
+}
+
+/* FLOATING CARD */
+.rn-reason-card{
+    position:absolute;
+    top:-80px;
+     right: 20%;
+    transform:translateX(-50%);
+    background:white;
+    padding:30px;
+    width:80%;
+    max-width:700px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    text-align:center;
+    border-top:5px solid #2563eb;
+}
+
+.rn-reason-card h2{
+    margin-bottom:15px;
+    color:#11115a;
+}
+
+/* CONTACT METHODS */
+.rn-contact-methods{
+    padding:80px 8%;
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.rn-method-card{
+    background:rgb(48, 48, 165);
+    padding:30px;
+    border-radius:15px;
+    width:280px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+    border-bottom:4px solid #2563eb; 
+}
+
+.rn-method-card:hover{
+    transform:translateY(-10px);
+}
+
+.rn-method-card h3{
+    margin-bottom:10px;
+}
+
+.rn-method-card p{
+    margin-bottom:15px;
+    color:#a7a2a2;
+}
+
+.rn-method-card strong{
+    color:#2563eb;
+    font-size:16px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+    .rn-overlay h1{
+        font-size:28px;
+    }
+
+    .rn-reason-card{
+        width:95%;
+    }
+
+}
